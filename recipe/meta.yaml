@@ -1,5 +1,5 @@
 {% set name = "pygix" %}
-{% set version = "2021.10.7" %}
+{% set version = "2021.10.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e506dd90087f939779007ededb01b8d268643616e45fc1004ed3239f345fdbb0
+  sha256: e4f0a95f126c3a0be9b133c2e5251a48668a5260a985b4945235db3e57153158
 
 build:
   number: 0
