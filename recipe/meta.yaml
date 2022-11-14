@@ -1,5 +1,5 @@
 {% set name = "pygix" %}
-{% set version = "2021.10.7.1" %}
+{% set version = "2022.11.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e4f0a95f126c3a0be9b133c2e5251a48668a5260a985b4945235db3e57153158
+  sha256: 2d0f8c59f7036acc4e1433b21bb0c7e823ef1416bfa8a0d50c685bd6c82f36bb
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - numpy
   run:
-    - python >=3.6
+    - python >=3.7
     - cython
     - fabio
     - numpy
@@ -58,3 +58,4 @@ about:
 extra:
   recipe-maintainers:
     - mrakitin
+    - gfreychet
