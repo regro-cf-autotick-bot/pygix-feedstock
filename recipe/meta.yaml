@@ -43,10 +43,12 @@ test:
     - pygix.process
     - pygix.tools
     - pygix.transform
-  requires:
-    - pip
-  commands:
-    - pip check
+    # The `pip check` command was commented out due to inconsistency of setuptools:
+    #   pyfai 0.21.3 has requirement setuptools<60.0.0, but you have setuptools 65.5.1.
+    # requires:
+    #   - pip
+    # commands:
+    #   - pip check
 
 about:
   home: https://github.com/tgdane/pygix
